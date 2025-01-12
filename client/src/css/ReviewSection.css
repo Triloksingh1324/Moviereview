@@ -1,0 +1,65 @@
+.ratingSelection2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .ratingSelection2 label {
+    font-size: 1.3rem;
+    color: #f0f0f0; /* Light color to match dark background */
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .ratingSelection2 select {
+    background-color: #2f2f2f; /* Dark background for the dropdown */
+    color: #f0f0f0; /* Light text for contrast */
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 8px; /* Rounded corners for smooth UI */
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactivity */
+  }
+
+  
+  .ratingSelection2 select:hover {
+    border-color: #4a90e2; /* Blue border on hover for better interactivity */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.6); /* Soft blue glow on hover */
+  }
+  
+  .ratingSelection2 select:focus {
+    border-color: #4a90e2; /* Blue border when focused */
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.8); /* Stronger glow on focus */
+  }
+  
+  .ratingSelection2 option {
+    background-color: #2f2f2f; /* Dark background for options */
+    color: #f0f0f0; /* Light text for options */
+  }
+  
+.thumb{
+  display: flex;
+  margin-top: 5px;
+}
+.thumbCount{
+  margin-left: 8px;
+  margin-top: -3px;
+}
+@media (max-width: 425px) {
+  .ratingSelection2 label {
+    font-size:18px;
+  }
+  .ratingSelection2 select {
+    font-size: 12px;
+    
+  }
+}
+@media (max-width: 380px) {
+  .ratingSelection2 label {
+    font-size:14px;
+    
+  }
+}

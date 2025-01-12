@@ -1,0 +1,52 @@
+.logoutModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logoutModalContent {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+ 
+  }
+  
+  .logoutModalButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .confirmButton {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cancelButton {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .confirmButton:hover,
+  .cancelButton:hover {
+    opacity: 0.9;
+  }
+  

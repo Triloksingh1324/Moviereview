@@ -1,0 +1,85 @@
+/* Styling for the filter button container */
+.filterButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-top: 20px; /* Increased margin to separate from the content */
+    position: relative;
+    z-index: 1;
+}
+
+/* Styling for the filter button */
+.filterButton {
+    background-color: #5a5a5a; /* Darker background for contrast */
+    color: white;
+    padding: 12px 20px; /* Increased padding for a bigger button */
+    border: none;
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.filterButton:hover {
+    background-color: #4a4a4a; /* Slightly darker on hover */
+}
+
+/* Styling for filter options dropdown */
+.filterOptions {
+    position: absolute;
+    top: 60px; /* Adjusted to position dropdown below the button */
+    right: 10;
+    background-color: #222; /* Dark background for dropdown */
+    padding: 20px; /* Increased padding for more space */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    z-index: 2;
+    width: 300px; /* Fixed width for uniformity */
+}
+
+/* Styling for labels within the filter options */
+.filterOptions label {
+    display: block;
+    margin-bottom: 12px; /* Increased spacing between labels */
+    color: #fff;
+    font-size: 14px; /* Larger font size for labels */
+}
+
+/* Styling for dropdowns and inputs */
+.filterOptions select,
+.filterOptions input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Increased padding for comfort */
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333; /* Dark background for inputs */
+    color: #fff;
+    margin-bottom: 15px; /* Spacing between inputs */
+    font-size: 14px; /* Larger font size for inputs */
+}
+
+/* Limit the height of the language dropdown to show only 5-6 options */
+.filterOptions select[name="language"] {
+    max-height: 150px; /* Height enough to show about 5-6 languages */
+    overflow-y: auto; /* Scroll if content exceeds max height */
+}
+
+.filterOptions input {
+    width: 93%;
+}
+
+/* Styling for apply filter button */
+.applyFilterButton {
+    background-color: #59b1f4; /* Bright blue for visibility */
+    padding: 12px; /* Increased padding for a bigger button */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.applyFilterButton:hover {
+    background-color: #468fca; /* Darker blue on hover */
+}

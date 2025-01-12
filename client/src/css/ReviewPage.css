@@ -1,0 +1,891 @@
+.movie {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  /* max-height: 115vh; */
+}
+
+.movie__intro {
+  width: 100%;
+}
+
+.movie__backdrop {
+  width: 100%;
+  height: 600px;
+  object-fit:cover;
+  object-position: 0 35%;
+}
+.movie__backdrop2 {
+  display: none;
+}
+.movie__detail {
+  align-items: center;
+  width: 75%;
+  display: flex;
+  position: relative;
+  bottom: 225px;
+}
+
+.movie__detailLeft {
+  margin-right: 30px;
+}
+
+.movie__poster {
+  width:300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content:space-between ;
+}
+
+.movie__detailRightTop > div{
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: .5rem;
+}
+
+.movie__name {
+  margin-left: -5px;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.movie__voteCount {
+  margin-left: 1rem;
+}
+
+.movie__genres {
+  margin: 1.25rem 0;
+}
+
+.movie__genre {
+  padding: .5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+
+.movie__detailRightBottom {
+  margin: 2rem 0;
+  flex: 0.8;
+}
+
+.synopsisText {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.synopsisText > div:last-of-type {
+  margin-left: auto;
+}
+
+
+.reviewPageContainer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.titleDateContainer {
+  flex: 1;
+}
+
+.titleDateContainer h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.titleDateContainer h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Ratings Row */
+.ratingsRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex: 0.6; /* Adjust width to align properly */
+}
+
+.ratingContainer,
+.userRatingContainer,
+.popularityContainer {
+  margin: 0 10px;
+}
+
+.ratingContainer h2,
+.userRatingContainer h2,
+.popularityContainer h2 {
+  font-size: 1.2rem; /* Reduce font size */
+}
+
+.ratingDetails {
+  display: flex;
+  align-items: center;
+}
+
+.ratingDetails h3 {
+  margin: 0 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ratingDetails span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.userRatingContainer {
+  text-align: center; /* Center the content horizontally */
+}
+
+.userRatingContainer h2 {
+  margin-bottom: 10px; /* Add some space between the heading and the icon */
+}
+
+.userStarIcon {
+  display: flex;
+  justify-content: center; /* Horizontally center the icon */
+  margin-top: 10px;
+}
+
+.popularityValue h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Bottom Section (Images and Overview) */
+.bottomSection {
+  margin-top: 30px;
+}
+
+.imagesContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.moviePosters{
+  width: 18%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movieBackdrops {
+  /* width: 200px; */
+  height: auto;
+  border-radius: 10px;
+}
+
+.movieOverview {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+
+.reviewButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviewButton:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the review input box */
+.reviewInputContainer {
+  margin-top: 20px;
+  background-color: white; /* White background for the review section */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewInput {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submitReviewButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitReviewButton:hover {
+  background-color: #218838;
+}
+
+.existingReviews {
+  margin-top: 20px;
+  /* background-color: #f8f9fa; */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.singleReview {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.singleReview:last-child {
+  border-bottom: none; /* Remove border from the last review */
+}
+
+/* Like Section */
+.likeSection {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likeButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.likeButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.likeSection p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Review Section Background */
+.reviewSection {
+
+  margin-top: -30px;
+  background-color: #1c1c1c; /* Blackish background to match theme */
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* White text color for better readability */
+}
+
+/* Single Review Container */
+.singleReview {
+  padding: 20px;
+  background-color: #2b2b2b; /* Darker background for individual review cards */
+  margin-bottom: 15px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Review Content Area */
+.reviewContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rating Section */
+.ratingStars {
+  color: gold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.filledStar {
+  margin-right: 5px;
+}
+
+/* Review Text */
+.reviewText {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+/* Review Options (Three Dots) */
+.reviewOptions {
+  font-size: 1.5rem;
+  color: #bbb;
+  cursor: pointer;
+}
+
+/* Review Footer (User Info) */
+.reviewFooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+/* User Profile */
+.reviewUser {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.profileImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit:fill;
+}
+
+.reviewUser span {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Adjusting the reviews section margin */
+.existingReviews {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Rating Stars - Keep Yellow */
+.ratingStars {
+  color: gold; /* Ensures the stars remain yellow */
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.filledStar {
+  margin-right: 5px;
+}
+
+/* Rating text - Lighter color */
+.ratingStars span {
+  color: #aaa; 
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+
+/* Bold and Stylish Username */
+.reviewUser span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White color for visibility */
+  text-transform: capitalize; /* Capitalize the username for a polished look */
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Align items vertically in the center */
+  width: 100%; /* Ensure the buttons container spans the full width */
+  gap: 20px;
+}
+
+.likeSection {
+  display: flex;
+  align-items: center; /* Vertical alignment for like button and text */
+  gap: 10px;
+  flex: 1; /* Pushes the like section to the left */
+}
+
+.sortDropdownContainer,
+.reviewButton,
+.count {
+  display: flex;
+  align-items: center; /* Align these elements vertically */
+}
+
+.sortDropdownContainer {
+  margin-right: 10px; /* Add space between dropdown and review button */
+}
+
+.count {
+  color: #ddd;
+  margin-right: 20px; /* Space between the count and sort dropdown */
+}
+
+.sortDropdown {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.reviewButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviewButton:hover {
+  background-color: #0056b3;
+}
+
+.likeCount {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+
+.count{
+  color: #ddd;
+  font-size: 1.5rem;
+}
+.reviewInput {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.reviewInput:focus {
+  border-color: blue;
+}
+
+.submitReviewButton {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitReviewButton:hover {
+  background-color: darkblue;
+}
+
+.reviewInputContainer {
+  background-color: rgba(45, 45, 45, 0.9); /* Darker semi-transparent background */
+  border-radius: 10px; /* Smooth rounded corners */
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  /* width: 100%;  */
+  max-width: 100%; /* Ensures no extra margin on smaller screens */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.reviewInputContainer textarea {
+  width: 95%; 
+  height: 100px;
+  background-color: #2f2f2f; /* Dark gray background for textarea */
+  border: 1px solid #555; /* Border to make textarea stand out */
+  border-radius: 8px;
+  padding: 10px;
+  color: #f0f0f0; /* Light text color */
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: none;
+}
+
+.reviewInputContainer textarea::placeholder {
+  color: rgba(240, 240, 240, 0.6); /* Lighter placeholder text */
+  font-style: italic;
+}
+
+.reviewInputContainer button {
+  background-color: #4a90e2; /* Blue button to contrast with dark background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  /* width: 90%;  */
+}
+
+.reviewInputContainer button:hover {
+  background-color: #357ab7; /* Slightly darker blue on hover */
+}
+
+.dropdown {
+  background-color: #2f2f2f; /* Dark background matching the theme */
+  color: #f0f0f0; /* Light text for contrast */
+  border: 1px solid #555; /* Border to separate from background */
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%; /* Full width for dropdown */
+  font-size: 1rem;
+}
+
+.dropdown option {
+  background-color: #2f2f2f; /* Dark background for options */
+  color: #f0f0f0; /* Light text for options */
+}
+
+.ratingSelection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.ratingSelection label {
+  font-size: 1.3rem;
+  color: #f0f0f0; /* Light color to match dark background */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.ratingSelection select {
+  background-color: #2f2f2f; /* Dark background for the dropdown */
+  color: #f0f0f0; /* Light text for contrast */
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 8px; /* Rounded corners for smooth UI */
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactivity */
+}
+
+.ratingSelection select:hover {
+  border-color: #4a90e2; /* Blue border on hover for better interactivity */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.6); /* Soft blue glow on hover */
+}
+
+.ratingSelection select:focus {
+  border-color: #4a90e2; /* Blue border when focused */
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.8); /* Stronger glow on focus */
+}
+
+.ratingSelection option {
+  background-color: #2f2f2f; /* Dark background for options */
+  color: #f0f0f0; /* Light text for options */
+}
+
+.optionsDropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 0;
+}
+
+.optionsDropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.optionsDropdown button:hover {
+  color: blue;
+}
+
+.reviewText textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: white;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+.reviewText button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #007bff;
+  /* color: white; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reviewText button:hover {
+  background-color: #0056b3;
+}
+
+.reviewText .cancelEditButton {
+  background-color: #dc3545;
+}
+
+.reviewText .cancelEditButton:hover {
+  background-color: #c82333;
+}
+
+.movie__intro {
+  position: relative; /* Enable positioning for absolute children */
+}
+
+
+
+.watchlistButton {
+  position: absolute; /* Position the button absolutely within the movie__intro div */
+  top: 20px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 15px; /* Padding around the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Font size */
+  display: flex; /* Use flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+.watchlistButton span {
+  margin-right: 5px; /* Space between the icon and text */
+  font-size: 20px; /* Icon size */
+}
+
+.watchlistButton:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Change color on hover */
+}
+.watchlistButton {
+  background-color: #007bff; /* Default color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.watchlistButton.in-watchlist {
+  background-color: #28a745; /* Change color when in watchlist */
+}
+
+.watchlistButton:hover {
+  opacity: 0.8;
+}
+
+.reviewCard__options {
+  position: relative;
+}
+
+.optionsDropdown {
+  position: absolute;
+   margin-right: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.replySection {
+  margin-top: 10px;
+  /* display: flex; */
+  gap: 10px;
+}
+
+.inputReply{
+  border-radius: 10px;
+  width: 90%;
+  resize: vertical;
+}
+
+
+.existingReplies {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.reply {
+  margin-top: 5px;
+}
+.btnReply{
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: start;
+  margin-top: 5px;
+}
+
+/* // repluy */
+.btnReply{
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: start;
+  /* margin-top: 1px; */
+}
+
+.rply{
+  display: flex;
+}
+.replyHeading{
+  font-size: small;
+  margin-top: 10px;
+  color: #afafaf;
+}
+.usernameSpan{
+  font-size:20px;
+  font-weight:normal;
+  color: white;
+}
+.btnReplyLike{
+  background-color: transparent;
+  margin-top: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.doneReply{
+  background-color: #4B9CD3;
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.spoiler{
+  margin-left: 20px;
+}
+.countReview{
+  display: contents;
+}
+@media (max-width: 996px) {
+  .movie__name {
+    font-size: 2.5rem;
+  }
+  .movie__detail {
+    width: 85%;
+    /* margin-left: 12.5%; */
+  }
+  .ratingSelection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:start;
+  }
+  .spoiler{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+ 
+}@media (max-width: 700px) {
+  
+  .movie__poster {
+    display: none;
+  }
+
+  .movie__poster {
+    display: none;
+  }
+  .movie__backdrop{
+    display: none;
+  }
+  .movie__backdrop2 {
+    display: flex;
+    width: 100%;
+    /* height: 600px;
+    object-fit:cover; */
+    object-position: 0 35%;
+  }
+
+}
+@media (max-width: 550px) {
+  
+  .movie__name{
+    font-size: 2.3rem;
+  }
+  .movie__detail {
+    width: 95%;
+    /* margin-left: 12.5%; */
+  }
+  .movie__poster {
+    display: none;
+  }
+  .movie__backdrop{
+    display: none;
+  }
+  .movie__backdrop2 {
+    display: flex;
+    width: 100%;
+    /* height: 600px;
+    object-fit:cover; */
+    object-position: 0 35%;
+  }
+  .buttonsContainer{
+    
+    display:contents;
+  }
+  .countReview{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+.reviewSection{
+  margin-top: 0;
+}
+.spoiler{
+  font-size: 20px;
+}
+.ratingSelection label {
+  font-size: medium;
+}
+.ratingSelection select {
+  font-size: 0.8rem;
+}
+}
+@media (max-width: 410px) {
+  .ratingSelection label {
+    font-size: smaller;
+  }
+  .media{
+    margin-top: 10px;
+  }
+}

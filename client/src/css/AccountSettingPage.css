@@ -1,0 +1,297 @@
+body{
+  background-color: #201f1f;
+ }
+.account-settings {
+  max-width: 500px;
+  margin: 50px auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+
+  padding: 30px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: left; 
+  /* position: relative; */
+  color: #fcfbfb;
+  align-items: center;
+  background-color: #282727;
+}
+
+/* Profile Section with Avatar */
+.profile-section {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 30px;
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit:fill;
+  cursor: pointer;
+}
+
+/* Profile Icon */
+.profile-icon {
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Upload Button Styling */
+.uploadIcon{
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+.upload-btn {
+  margin-top: 10px;
+  margin-left: 20px;
+  /* padding: 8px 15px; */
+  background-color: #288ea7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+.upload-btn2 {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-right: 30px;
+  /* width: 10rem; */
+  background-color: #494949;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #218838;
+}
+
+
+/* Account Field Labels */
+.account-field label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Visible label color */
+  margin-right: 10px;
+}
+
+/* Account Fields */
+.account-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1717c7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.account-field input {
+  flex: 1;
+  padding: 12px;
+  width: 90%;
+  margin-right: 10px;padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #e8f0fe;
+  font-size: 16px;
+  color: #333; /* Ensure input text color is visible */
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.account-field input::placeholder {
+  color: #666; /* Placeholder color */
+}
+
+.account-field input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+/* Button Styling */
+.account-field button {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.account-field button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Password Edit Section */
+.password-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.password-edit input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #e8f0fe;
+  font-size: 16px;
+}
+
+.password-edit input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+/* Account Settings Title */
+
+
+/* Center the Account Settings Title */
+.account-settings-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+ 
+
+}
+
+/* Section Title Styling */
+.account-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* color: #333; */
+  text-align: left; /* Align section headings to the left */
+}
+.spanPassword{
+  
+  margin-top: 10px;
+}
+/* Account Field Styling */
+.account-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #414040;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Style individual sections with some spacing */
+.account-section {
+  margin-bottom: 30px;
+}
+
+/* Update button styling */
+.account-field button {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.account-field button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.send-code-btn, .verify-btn {
+  margin-top: 10px;
+  margin-left: 2px;
+  padding: 7px 19px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+.account-field .send-code-btn2 {
+  margin-top: 10px;
+  margin-left: 2px;
+  padding: 7px 19px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed; 
+  height: 40px;
+  opacity: 0.6; /
+}
+
+
+.account-field button:disabled:hover {
+  background-color: #007bff; 
+  box-shadow: none;
+  cursor: not-allowed; 
+}
+
+.verify-btn:hover{
+  background-color:#0056b3;
+}
+.verification-section input{
+  width: 50%;
+  font-size: small;
+  padding: 11px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+.verified-badge {
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+}
+.checkmark{
+  color: #5aa6f8;
+  margin-left: 5px;
+}
+.checkmark2{
+  color: #fb6d46;
+  margin-left: 5px;
+}
+.verifyIcon{
+  font-size:10px;
+  margin-left: 5px;
+  font-weight: 100;
+  color: #d3d2d2;
+}
+.emailSave{
+  margin-bottom: 50px;
+}
+.confPassword{
+  margin-top: 5px;
+}
+.setPassword{
+  margin-top: 10px;
+  /* width: 0% */
+}
+.editModePassword{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .account-field{
+    font-size: 13px;
+  }
+
+}

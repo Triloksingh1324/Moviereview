@@ -1,0 +1,52 @@
+/* .newMoviesPageContainer {
+    padding: 20px;
+} */
+
+.newMovieSection {
+    margin-bottom: 50px;
+    
+}
+
+.newMovieSlider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.newMovieSliderContainer {
+    display: flex;
+    overflow: hidden; /* Hide the overflowing content */
+    width: 100%; /* Full width of the container */
+}
+
+.newMovieCard {
+    flex: 0 0 200px; 
+    margin: 0 10px;
+    margin-left: 20px;
+}
+
+.newMoviePoster {
+    height: 40vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.newPrevButton, .newNextButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.newPrevButton {
+    position: absolute;
+    left: 0;
+}
+
+.newNextButton {
+    position: absolute;
+    right: 0;
+}
